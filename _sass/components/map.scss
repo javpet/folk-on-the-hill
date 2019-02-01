@@ -1,0 +1,34 @@
+#map {
+  background-image: url("/imgs/folk_on_the_hill_background_2.jpg");
+  background-size: cover;
+  height: 1300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.map__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  img {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    height: 150px;
+  }
+
+  .map__container__map {
+    width: 90%;
+    margin-bottom: 24px;
+  }
+
+  .arrival__options {
+    max-width: 55%;
+    text-align: center;
+
+    p {
+      margin-bottom: 16px;
+    }
+  }
+}
