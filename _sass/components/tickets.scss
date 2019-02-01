@@ -1,0 +1,28 @@
+#tickets {
+  background-image: url("/imgs/folk_on_the_hill_background_3.jpg");
+  height: 650px;
+}
+
+.tickets__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  img {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    max-width: 300px;
+  }
+
+  p {
+    width: 55%;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  p:last-child {
+    margin-top: 24px;
+    margin-bottom: 0px;
+  }
+}
