@@ -13,13 +13,15 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="https://use.typekit.net/iyc0wnv.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="{{ "/css/main.css" | relative_url }}">
 
   <!-- Favicon!!! -->
 </head>
 
 <body>
-  {{ content }}
+  <main>
+    {{ content }}
+  </main>
 </body>
 
 </html>
