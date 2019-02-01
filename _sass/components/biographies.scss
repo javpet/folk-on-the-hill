@@ -1,0 +1,43 @@
+#biographies {
+  background-image: url("/imgs/folk_on_the_hill_background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 800px;
+}
+
+.biographies__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  .biographies__container__img {
+    margin-top: 24px;
+    margin-bottom: 32px;
+  }
+
+  .biographies__container__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .biographies__container__list--item {
+      text-align: center;
+      width: 40%;
+
+      h2 {
+        margin-bottom: 16px;
+      }
+    }
+
+    .biographies__container__list--item__cover {
+      width: 100%;
+      height: 250px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-bottom: 16px;
+    }
+  }
+}
