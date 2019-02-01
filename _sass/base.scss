@@ -4,12 +4,17 @@ $primary-black: #000;
 
 // TYPOGRAPHY
 
+:root {
+  font-size: 24px;
+}
+
 body {
   font-family: "english-grotesque", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
   color: $primary-black;
+  line-height: 1.1;
 }
 
 .large-body {
@@ -21,38 +26,33 @@ body {
 h1 {
   font-family: "english-grotesque", sans-serif;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 1.25rem;
   color: $primary-black;
 }
 
 h2 {
   font-family: "english-grotesque", sans-serif;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 1.25rem;
   color: $primary-black;
 }
 
 h3 {
   font-family: "english-grotesque", sans-serif;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 1rem;
   color: $primary-black;
 }
 
 // STRUCTURE
-main {
+main,
+.container {
   margin: 0 auto;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 576px) {
   .container {
-    max-width: 1140px;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  .container {
-    max-width: 960px;
+    max-width: 540px;
   }
 }
 
@@ -62,8 +62,13 @@ main {
   }
 }
 
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 992px) {
   .container {
-    max-width: 540px;
+    max-width: 960px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
   }
 }
