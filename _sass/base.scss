@@ -1,11 +1,13 @@
 // COLORS
-
 $primary-black: #000;
 
 // TYPOGRAPHY
-
 :root {
   font-size: 24px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -21,6 +23,10 @@ body {
   font-family: "english-grotesque", sans-serif;
   font-size: 32px;
   color: $primary-black;
+}
+
+.extra {
+  font-size: 1.5rem;
 }
 
 h1 {
