@@ -32,7 +32,7 @@ function scrolledPast(element) {
   let userScrolls = window.pageYOffset;
 
   if (userScrolls > rectangleBottom) {
-    menuContainer.style.backgroundColor = "rgba(255,255,255)";
+    menuContainer.style.backgroundColor = "rgba(255,255,255, 1)";
     menuContainerLogo.style.transform = "translateY(0%)";
   } else {
     menuContainer.style.backgroundColor = "rgba(255,255,255,.0)";
