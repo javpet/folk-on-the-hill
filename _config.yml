@@ -17,7 +17,7 @@ title: Folk On The Hill - Music Festival || Harrow On The Hill 🌄
 email: info@folk-on-the-hill.co.uk
 description: >- # this means to ignore newlines until "baseurl:"
   Harrow’s 1st (we think) Folk and Craft festival. Based around the main venue of the Ryan Theatre, we are presenting a weekend festival on 10th & 11th August 2019. Feature artists include - Reg Meuross, Holy Moly and the Crackers, India Electric Co., While and Mathews, and many others.
-baseurl: "https://javpet.github.io/folk-on-the-hill" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://javpet.github.io/folk-on-the-hill"
 facebook_username: Folk-on-the-Hill-music-festival-366706564162282
 
