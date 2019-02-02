@@ -1,5 +1,5 @@
 #about__intro {
-  background-image: asset_url("/imgs/folk_on_the_hill_background.jpg");
+  background-image: url({{"/imgs/folk_on_the_hill_background.jpg"|asset_url}});
 
   background-repeat: no-repeat;
   background-position: center;
@@ -8,7 +8,7 @@
 }
 
 #about__text {
-  background-image: asset_url("/imgs/folk_on_the_hill_background_2.jpg");
+  background-image: url({{"/imgs/folk_on_the_hill_background_2.jpg"|asset_url}});
   background-size: cover;
   height: 930px;
   display: flex;
