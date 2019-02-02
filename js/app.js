@@ -19,7 +19,7 @@ menuIcon.addEventListener("click", function() {
 
 links.forEach(link => {
   link.addEventListener("click", () => {
-    menuIcon.src = "../imgs/folk_on_the_hill_menu.svg";
+    menuIcon.src = `${window.location}/imgs/folk_on_the_hill_menu.svg`;
     menuIcon.classList.remove("exit");
     flyIn.style.transform = "translateX(-100%)";
   });
