@@ -6,7 +6,6 @@ const links = document.querySelectorAll("nav a");
 const logo = document.querySelector(".about__container__logo");
 
 menuIcon.addEventListener("click", function() {
-  console.log("new");
   if (this.classList.contains("exit")) {
     this.src = "imgs/folk_on_the_hill_menu.svg";
     this.classList.remove("exit");
