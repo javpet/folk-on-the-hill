@@ -55,3 +55,17 @@ header {
     text-transform: uppercase;
   }
 }
+
+// MEDIA
+@media only screen and (max-width: 576px) {
+  header {
+    height: 50px;
+    padding-left: 16px;
+
+    .menu__container__logo {
+      height: 80px;
+      width: 80px;
+      left: calc(50% - 40px);
+    }
+  }
+}

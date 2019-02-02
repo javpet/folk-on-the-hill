@@ -34,3 +34,73 @@
     }
   }
 }
+
+// MEDIA
+@media only screen and (max-width: 1200px) {
+  #map {
+    height: 1260px;
+  }
+
+  .map__container {
+    img {
+      height: 120px;
+    }
+
+    .arrival__options {
+      max-width: 70%;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  #map {
+    height: 1180px;
+  }
+
+  .map__container {
+    .map__container__map {
+      width: 100%;
+    }
+
+    .arrival__options {
+      max-width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #map {
+    height: 1300px;
+  }
+
+  .map__container {
+    img {
+      height: 100px;
+    }
+  }
+
+  .arrival__options {
+    h2,
+    p {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  #map {
+    height: 1210px;
+  }
+
+  .map__container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .arrival__options {
+    h2,
+    p {
+      font-size: 0.75rem;
+    }
+  }
+}

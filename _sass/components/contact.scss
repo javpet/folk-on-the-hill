@@ -41,3 +41,60 @@
     }
   }
 }
+
+// MEDIA
+@media only screen and (max-width: 1200px) {
+  #contact {
+    height: 580px;
+  }
+
+  .contact__container {
+    .contact__container__img {
+      height: 100px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #contact {
+    height: 520px;
+  }
+
+  .contact__container {
+    .contact__container__img {
+      height: 80px;
+    }
+
+    .site__creation {
+      h3 {
+        margin-bottom: 0;
+        font-size: 0.75rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  #contact {
+    height: 520px;
+  }
+
+  .contact__container {
+    padding-left: 16px;
+    padding-right: 16px;
+
+    .contact__container__img {
+      height: 80px;
+    }
+
+    .contact__container__list {
+      h3 {
+        font-size: 0.75rem;
+      }
+    }
+
+    p {
+      font-size: 0.75rem;
+    }
+  }
+}

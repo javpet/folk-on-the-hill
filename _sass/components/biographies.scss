@@ -41,3 +41,86 @@
     }
   }
 }
+
+// MEDIA
+@media only screen and (max-width: 1200px) {
+  #biographies {
+    height: 780px;
+  }
+
+  .biographies__container {
+    img {
+      height: 100px;
+    }
+
+    .biographies__container__list {
+      .biographies__container__list--item {
+        width: 45%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  #biographies {
+    height: 1140px;
+  }
+
+  .biographies__container {
+    .biographies__container__list {
+      justify-content: space-between;
+    }
+
+    .biographies__container__list {
+      .biographies__container__list--item {
+        width: 100%;
+        margin-bottom: 24px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #biographies {
+    height: 1240px;
+  }
+
+  .biographies__container {
+    img {
+      height: 80px;
+    }
+
+    .biographies__container__list {
+      .biographies__container__list--item {
+        h2,
+        p {
+          font-size: 1rem;
+        }
+
+        margin-bottom: 32px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  #biographies {
+    height: 1170px;
+  }
+
+  .biographies__container {
+    padding-left: 16px;
+    padding-right: 16px;
+
+    .biographies__container__list {
+      .biographies__container__list--item {
+        h2,
+        p {
+          font-size: 0.75rem;
+        }
+
+        margin-bottom: 32px;
+      }
+    }
+  }
+}

@@ -9,7 +9,7 @@
 #about__text {
   background-image: url("/imgs/folk_on_the_hill_background_2.jpg");
   background-size: cover;
-  height: 880px;
+  height: 930px;
   display: flex;
   flex-direction: column;
 }
@@ -75,11 +75,170 @@
   }
 }
 
+// ANIMATION
 @-webkit-keyframes rotation {
   from {
     -webkit-transform: rotate(0deg);
   }
   to {
     -webkit-transform: rotate(359deg);
+  }
+}
+
+// MEDIA
+@media only screen and (max-width: 1200px) {
+  #about__text {
+    height: 880px;
+  }
+
+  .about__container {
+    .about__container__logo {
+      width: 500px;
+      top: 140px;
+    }
+
+    .about__container__sun {
+      width: 180px;
+      top: 50px;
+      right: 150px;
+      -webkit-animation: rotation 32s infinite linear;
+    }
+  }
+
+  .about__text__container {
+    top: 180px;
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  #about__intro {
+    height: 350px;
+  }
+
+  #about__text {
+    height: 900px;
+  }
+
+  .about__container {
+    .about__container__logo {
+      width: 450px;
+      top: 140px;
+    }
+
+    .about__container__sun {
+      width: 150px;
+      right: 80px;
+    }
+  }
+
+  .about__text__container {
+    top: 180px;
+    width: 65%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #about__intro {
+    height: 280px;
+  }
+
+  #about__text {
+    height: 820px;
+  }
+
+  .about__container {
+    .about__container__logo {
+      width: 400px;
+      top: 100px;
+    }
+
+    .about__container__sun {
+      top: 30px;
+      right: 0;
+    }
+  }
+  .about__text__container {
+    top: 170px;
+    width: 100%;
+
+    h1,
+    h2 {
+      font-size: 1rem;
+    }
+
+    h3 {
+      font-size: 0.75rem;
+    }
+  }
+
+  .about__lineup__container {
+    img {
+      max-width: 220px;
+    }
+
+    .about__lineup--saturday,
+    .about__lineup--sunday {
+      width: 45%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  #about__intro {
+    height: 200px;
+  }
+
+  #about__text {
+    height: 940px;
+  }
+
+  .about__container {
+    .about__container__logo {
+      width: 300px;
+      top: 60px;
+    }
+
+    .about__container__sun {
+      width: 100px;
+      top: 10px;
+      right: 10px;
+    }
+  }
+  .about__text__container {
+    top: 120px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    h1,
+    h2 {
+      font-size: 1rem;
+    }
+
+    h3,
+    p {
+      font-size: 0.75rem;
+    }
+  }
+
+  .about__lineup__container {
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      max-width: 200px;
+    }
+
+    .about__lineup--saturday,
+    .about__lineup--sunday {
+      width: 100%;
+    }
+
+    .about__lineup--saturday {
+      margin-bottom: 24px;
+    }
   }
 }
