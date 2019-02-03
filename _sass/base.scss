@@ -80,7 +80,7 @@ main,
 
 .anchor {
   display: block;
-  height: 50px;
+  height: 40px;
   margin-top: -50px;
   visibility: hidden;
 }
@@ -100,6 +100,10 @@ main,
 @media only screen and (max-width: 768px) {
   .container {
     max-width: 540px;
+  }
+
+  .anchor {
+    height: 50px;
   }
 }
 
