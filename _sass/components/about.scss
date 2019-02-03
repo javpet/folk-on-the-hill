@@ -11,7 +11,7 @@
   background-image: url("../imgs/folk_on_the_hill_background_2.jpg");
   background-color: #cbe6c6;
   background-size: cover;
-  height: 930px;
+  height: 1110px;
   display: flex;
   flex-direction: column;
 }
@@ -42,15 +42,22 @@
   position: relative;
   top: 220px;
   width: 55%;
+  display: flex;
+  flex-direction: column;
 
   p,
   h1 {
     margin-bottom: 24px;
   }
+
+  img {
+    margin-top: 16px;
+    align-self: center;
+    max-width: 400px;
+  }
 }
 
 .about__lineup__container {
-  margin-top: 32px;
   display: flex;
   justify-content: space-between;
 
@@ -90,7 +97,7 @@
 // MEDIA
 @media only screen and (max-width: 1200px) {
   #about__text {
-    height: 880px;
+    height: 1080px;
   }
 
   .about__container {
@@ -119,7 +126,7 @@
   }
 
   #about__text {
-    height: 900px;
+    height: 1070px;
   }
 
   .about__container {
@@ -134,9 +141,20 @@
     }
   }
 
+  .about__lineup__container {
+    img {
+      max-width: 220px;
+    }
+  }
+
   .about__text__container {
     top: 180px;
     width: 65%;
+
+    .about__theater__banner {
+      margin-top: 0;
+      max-width: 300px;
+    }
   }
 }
 
@@ -146,7 +164,7 @@
   }
 
   #about__text {
-    height: 820px;
+    height: 950px;
   }
 
   .about__container {
@@ -172,12 +190,15 @@
     h3 {
       font-size: 0.75rem;
     }
+
+    .about__theater__banner {
+      margin-top: 16px;
+      margin-bottom: 8px;
+      max-width: 300px;
+    }
   }
 
   .about__lineup__container {
-    img {
-      max-width: 220px;
-    }
 
     .about__lineup--saturday,
     .about__lineup--sunday {
@@ -195,7 +216,7 @@
   }
 
   #about__text {
-    height: 940px;
+    height: 1020px;
   }
 
   .about__container {
@@ -224,6 +245,12 @@
     p {
       font-size: 0.75rem;
     }
+
+    .about__theater__banner {
+      margin-top: 8px;
+      margin-bottom: 8px;
+      max-width: 300px;
+    }
   }
 
   .about__lineup__container {
@@ -247,9 +274,9 @@
 
 @media only screen and (max-width: 350px) {
   #about__text {
-    height: 960px;
+    height: 1060px;
   }
-  .about__container {    
+  .about__container {
     .about__container__logo {
       top: 70px;
     }
