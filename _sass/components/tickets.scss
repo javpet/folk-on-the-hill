@@ -43,6 +43,10 @@
     p {
       font-size: 1rem;
     }
+
+    p {
+        width: 60%;
+    }
   }
 }
 
@@ -97,5 +101,11 @@
 @media only screen and (max-width: 350px) {
   #tickets {
     height: 600px;
+  }
+
+  .tickets__container {
+    img {
+      height: 70px;
+    }
   }
 }
