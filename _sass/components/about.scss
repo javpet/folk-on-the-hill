@@ -1,46 +1,37 @@
 #about__intro {
-  background-image: url("../imgs/folk_on_the_hill_background.jpg");
+  background-image: url("../imgs/folk_on_the_hill_background_main.jpg");
   background-color: #abdaf9;
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
-  height: 400px;
-}
-
-#about__text {
-  background-image: url("../imgs/folk_on_the_hill_background_2.jpg");
-  background-color: #cbe6c6;
-  background-size: cover;
-  height: 1110px;
+  height: auto;
   display: flex;
   flex-direction: column;
+  padding-top: 100px;
+  padding-bottom: 32px;
 }
 
 .about__container {
+  position: relative;
   display: flex;
   align-items: center;
-  position: relative;
   justify-content: center;
   width: 100%;
 
   .about__container__logo {
-    position: relative;
     width: 550px;
-    top: 140px;
+    margin-bottom: 32px;
   }
 
   .about__container__sun {
     position: absolute;
     width: 200px;
-    top: 50px;
+    top: -50px;
     right: 200px;
     -webkit-animation: rotation 32s infinite linear;
   }
 }
 
 .about__text__container {
-  position: relative;
-  top: 220px;
   width: 55%;
   display: flex;
   flex-direction: column;
@@ -96,10 +87,6 @@
 
 // MEDIA
 @media only screen and (max-width: 1200px) {
-  #about__text {
-    height: 1080px;
-  }
-
   .about__container {
     .about__container__logo {
       width: 500px;
@@ -108,7 +95,7 @@
 
     .about__container__sun {
       width: 180px;
-      top: 50px;
+      top: -70px;
       right: 150px;
       -webkit-animation: rotation 32s infinite linear;
     }
@@ -121,14 +108,6 @@
 }
 
 @media only screen and (max-width: 992px) {
-  #about__intro {
-    height: 350px;
-  }
-
-  #about__text {
-    height: 1070px;
-  }
-
   .about__container {
     .about__container__logo {
       width: 450px;
@@ -159,14 +138,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-  #about__intro {
-    height: 280px;
-  }
-
-  #about__text {
-    height: 950px;
-  }
-
   .about__container {
     .about__container__logo {
       width: 400px;
@@ -174,7 +145,7 @@
     }
 
     .about__container__sun {
-      top: 30px;
+      top: -70px;
       right: 0;
     }
   }
@@ -199,7 +170,6 @@
   }
 
   .about__lineup__container {
-
     .about__lineup--saturday,
     .about__lineup--sunday {
       width: 45%;
@@ -211,14 +181,6 @@
 }
 
 @media only screen and (max-width: 576px) {
-  #about__intro {
-    height: 200px;
-  }
-
-  #about__text {
-    height: 1020px;
-  }
-
   .about__container {
     .about__container__logo {
       width: 280px;
@@ -226,9 +188,9 @@
     }
 
     .about__container__sun {
-      width: 90px;
-      top: 16px;
-      right: 20px;
+      width: 120px;
+      top: -70px;
+      right: 40px;
     }
   }
   .about__text__container {
@@ -272,13 +234,12 @@
   }
 }
 
-@media only screen and (max-width: 350px) {
-  #about__text {
-    height: 1060px;
-  }
+@media only screen and (max-width: 400px) {
   .about__container {
-    .about__container__logo {
-      top: 70px;
+    .about__container__sun {
+      width: 100px;
+      top: -80px;
+      right: 20px;
     }
   }
 

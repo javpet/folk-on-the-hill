@@ -1,7 +1,10 @@
 #contact {
   background-image: url("../imgs/folk_on_the_hill_background_3.jpg");
   background-size: cover;
-  height: 620px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .contact__container {
@@ -10,7 +13,6 @@
   align-items: center;
 
   .contact__container__img {
-    margin-top: 24px;
     margin-bottom: 24px;
     height: 120px;
   }
@@ -44,10 +46,6 @@
 
 // MEDIA
 @media only screen and (max-width: 1200px) {
-  #contact {
-    height: 580px;
-  }
-
   .contact__container {
     .contact__container__img {
       height: 100px;
@@ -56,10 +54,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-  #contact {
-    height: 520px;
-  }
-
   .contact__container {
     .contact__container__img {
       height: 80px;
@@ -75,16 +69,12 @@
 }
 
 @media only screen and (max-width: 576px) {
-  #contact {
-    height: 520px;
-  }
-
   .contact__container {
     padding-left: 16px;
     padding-right: 16px;
 
     .contact__container__img {
-      height: 60px;
+      height: 80px;
     }
 
     .contact__container__list {
@@ -95,6 +85,17 @@
 
     p {
       font-size: 0.75rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .contact__container {
+    padding-left: 16px;
+    padding-right: 16px;
+
+    .contact__container__img {
+      height: 60px;
     }
   }
 }

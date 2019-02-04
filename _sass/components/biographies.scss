@@ -3,7 +3,10 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 800px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .biographies__container {
@@ -14,7 +17,6 @@
   width: 100%;
 
   .biographies__container__img {
-    margin-top: 24px;
     margin-bottom: 32px;
   }
 
@@ -44,10 +46,6 @@
 
 // MEDIA
 @media only screen and (max-width: 1200px) {
-  #biographies {
-    height: 790px;
-  }
-
   .biographies__container {
     img {
       height: 100px;
@@ -62,10 +60,6 @@
 }
 
 @media only screen and (max-width: 992px) {
-  #biographies {
-    height: 1160px;
-  }
-
   .biographies__container {
     .biographies__container__list {
       justify-content: space-between;
@@ -81,10 +75,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-  #biographies {
-    height: 1220px;
-  }
-
   .biographies__container {
     img {
       height: 80px;
@@ -99,15 +89,15 @@
 
         margin-bottom: 32px;
       }
+
+      .biographies__container__list--item:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 }
 
 @media only screen and (max-width: 576px) {
-  #biographies {
-    height: 1170px;
-  }
-
   .biographies__container {
     padding-left: 16px;
     padding-right: 16px;
@@ -121,15 +111,15 @@
 
         margin-bottom: 32px;
       }
+
+      .biographies__container__list--item:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 }
 
 @media only screen and (max-width: 350px) {
-  #biographies {
-    height: 1250px;
-  }
-
   .biographies__container {
     img {
       height: 60px;
