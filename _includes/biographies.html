@@ -12,6 +12,7 @@
         <p>{{ site.data.biographies.artist_1_description }}</p>
       </div>
 
+      {% if site.data.biographies.artist_2 %}
       <div class="biographies__container__list--item">
         <div class="biographies__container__list--item__cover" style="background-image: url({{ site.data.biographies.artist_2_cover_url }})">
         </div>
@@ -19,6 +20,7 @@
         <h2>{{ site.data.biographies.artist_2 }}</h2>
         <p>{{ site.data.biographies.artist_2_description }}</p>
       </div>
+      {% endif %}
 
       {% if site.data.biographies.artist_3 %}
       <div class="biographies__container__list--item">
