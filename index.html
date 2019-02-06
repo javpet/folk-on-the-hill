@@ -10,5 +10,20 @@ layout: default
 {% include venues.html %}
 {% include contact.html %}
 
-<!-- JS -->
+<!-- EVENTBRITE JS -->
+<script src="https://www.eventbrite.co.uk/static/widgets/eb_widgets.js"></script>
+<script type="text/javascript">
+  var exampleCallback = function() {
+    console.log('Order complete!');
+  };
+
+  window.EBWidgets.createWidget({
+    widgetType: 'checkout',
+    eventId: '55755088972',
+    modal: true,
+    modalTriggerElementId: 'eventbrite-widget-modal-trigger-55755088972',
+    onOrderComplete: exampleCallback
+  });
+</script>
+<!-- CUSTOM JS -->
 <script type="text/javascript" src="js/app.js"></script>
